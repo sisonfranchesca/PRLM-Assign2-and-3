@@ -11,7 +11,7 @@
         'Hazelnut Brew' => ['price' => 350.00, 'stock' => 0]
     ];
 
-    $tax_rate = 12; // Tax rate 12%
+    $tax = 12; // Tax rate 12%
 
     // Function for the reorder yes or no message, if my stock is less than 10
     function get_reorder_message(int $message): string {
@@ -24,8 +24,8 @@
     }
 
     // Function for the tax
-    function get_tax_due(float $price, int $quantity, int $tax_rate = 0): float {
-        return ($price * $quantity) * ($tax_rate / 100);
+    function get_tax_due(float $price, int $quantity, int $tax = 0): float {
+        return ($price * $quantity) * ($tax / 100);
     }
 
 ?>
@@ -143,7 +143,7 @@
                         <td>₱ <?php echo get_total_value($data['price'], $data['stock']); ?></td>
                         
                         <!-- Calls the tax -->
-                        <td>₱ <?php echo get_tax_due($data['price'], $data['stock'], $tax_rate); ?></td>
+                        <td>₱ <?php echo get_tax_due($data['price'], $data['stock'], $tax); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -156,4 +156,3 @@
     <?php require_once 'includes/footer.php'; ?> 
 </body>
 </html>
-
