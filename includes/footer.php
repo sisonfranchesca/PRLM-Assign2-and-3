@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopfy Store</title>
         <style>
-            footer {
+            footer p {
                 background-color: #ac895f;
                 color: white;
                 text-align: center;
@@ -17,7 +17,8 @@
 <body>
     <footer>
         <p>&copy; 2025 Kopfy Store | Contact: info@kopfyStore.com</p>
-        <p>&copy; Created by: Franchesca Zyreen Sison - November 2025 | WD201</p>
+        <p>&copy; Created by: Franchesca Zyreen Sison - 2025 | WD201</p>
     </footer>
 </body>
+
 </html>
