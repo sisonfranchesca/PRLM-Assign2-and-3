@@ -74,7 +74,8 @@
         <div class="name">Kopfy Store</div>
             <nav>
                 <ul class="menu">
-                    <li><a href="">Home</a></li>
+                    <li><a href="PRLM_Act2.php">Home</a></li>
+                    <li><a href="functions.php">Stocks</a></li> <!-- Added navigation for functions act-->
                     <li>
                         <a href="">Menu ▾</a>
                         <ul class="dropdown">
@@ -88,4 +89,5 @@
 </head>
 <body>
 </body>
+
 </html>
